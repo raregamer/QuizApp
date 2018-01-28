@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="question_1">What does a milliner make and sell?</string>
+    <string name="score">Previous Score:</string>
+    <string name="name">Name</string>
+    <string name="question_1_choice_a">Hats</string>
+    <string name="question_1_choice_b">Shoes</string>
+    <string name="question_1_choice_c">Belts</string>
+    <string name="question_1_choice_d">Shirts</string>
+    <string name="question_2">How many dice are used in the game of Yahtzee?</string>
+    <string name="question_2_choice_a">Four</string>
+    <string name="question_2_choice_b">Five</string>
+    <string name="question_2_choice_c">Six</string>
+    <string name="question_2_choice_d">Eight</string>
+    <string name="question_3">What is the capital of Spain?</string>
+    <string name="question_3_choice_a">Barcelona</string>
+    <string name="question_3_choice_b">Sevilla</string>
+    <string name="question_3_choice_c">Madrid</string>
+    <string name="question_3_choice_d">Toledo</string>
+    <string name="true_or_false_1">Tennis was once known as Racquetball</string>
+    <string name="true_false_answer_a">True</string>
+    <string name="true_false_answer_b">False</string>
+    <string name="anagram_hint">Answer</string>
+    <string name="submit_button">submit</string>
+</resources>
