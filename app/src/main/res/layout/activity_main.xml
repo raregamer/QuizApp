@@ -268,8 +268,26 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/emailbutton2"
+                    android:onClick="emailScore"
+                    />
+
             <ImageButton
-                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:layout_width="110dp"
                 android:layout_height="100dp"
                 android:scaleType="fitCenter"
                 android:layout_below="@id/anagramHeading"
@@ -278,6 +296,11 @@
                 android:background="@android:color/transparent"
                 android:onClick="submitResults"
                 android:src="@drawable/submitbutton" />
+
+
+
+            </LinearLayout>
+
 
 
         </LinearLayout>

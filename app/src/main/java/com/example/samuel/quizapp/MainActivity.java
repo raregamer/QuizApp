@@ -1,6 +1,8 @@
 package com.example.samuel.quizapp;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -165,4 +167,23 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     }
 
 
+    public void emailScore(View view) {
+        question1.questionAnswerTest();
+        question2.questionAnswerTest();
+        question3.questionAnswerTest();
+        checkBoxResults();
+        editTextResults();
+        Intent email = new Intent(Intent.ACTION_SENDTO);
+        email.setData(Uri.parse("mailto:"));
+        email.putExtra(Intent.EXTRA_SUBJECT, name.getText() + " Quiz Score");
+        email.putExtra(Intent.EXTRA_TEXT, name.getText() + " got " + (Questions.correct) + "/5 correct.");
+
+        try{
+            startActivity(email);
+            finish();
+        } catch (android.content.ActivityNotFoundException ex){
+            Toast.makeText(this,"there is no email client", Toast.LENGTH_SHORT).show();
+        }
+
+    }
 }
